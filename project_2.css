@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html{
+  scroll-behavior: smooth;
+}
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(img2/tea.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  /* border-bottom-right-radius: 15%; */
+}
+nav img {
+  width: 150px;
+}
+nav {
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px 14px;
+  position: relative;
+}
+.nav-links ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+nav {
+  color: antiquewhite;
+  font-size: 30px;
+  font-family: cursive;
+  font-weight: 600;
+  text-decoration: wavy;
+}
+.nav-links ul li::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: #f44336;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+.text-box {
+  font-size: 20px;
+  font-family: cursive;
+  width: 90%;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+#odr {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 14px;
+  padding: 8px 24px;
+  font-size: 16px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.5s;
+}
+#odr:hover {
+  background-color: rgb(245, 82, 22);
+}
+nav .fa {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .text-box {
+    font-size: 10px;
+  }
+  .nav-links {
+    position: absolute;
+    background: #f44336;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+    transition: 1s;
+  }
+  .nav-links ul {
+    padding: 28px;
+  }
+  nav .fa {
+    display: block;
+    color: #fff;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+  }
+}
+/* ----city--- */
+.city {
+  /* background-color: gray; */
+  font-family: cursive;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 80px;
+  font-size: 18px;
+}
+.row {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+.meal-col {
+  flex-basis: 30%;
+  background-color: #f5adad;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+h3{
+  text-align: center;
+  font-weight: 600;
+  margin: 10px 0;
+}
+.meal-col:hover{
+  box-shadow: 0 0 20px 0px rgb(5, 5, 5);
+}
+@media(max-width: 700px){
+  .row{
+    flex-direction: column;
+  }
+}
+/*-----Franchise section----*/
+
+.food{
+  font-family: cursive;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+  font-size: 18px;
+
+}
+.food-col{
+  flex-basis: 30%;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 50%;
+  margin-bottom: 40px;
+  position: relative;
+  overflow: hidden;
+  padding: 10px 6px;
+  box-sizing: border-box;
+  transition: 0.5s;
+
+}
+.food-col img{
+  width: 80%;
+  /* margin: 2px; */
+  border-radius: 50%;
+
+}
+.food-col:hover{
+  box-shadow: 0 0 20px 0px rgb(5, 5, 5);
+
+}
+.footer{
+  background-color: rgb(12, 12, 12);
+  color: rgb(172, 169, 169);
+  padding: 2%;
+  text-align: center;
+}
+span{
+  display: block;
+  
+}
+

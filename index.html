@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bachelor's Cafe</title>
+    <link rel="stylesheet" type="text/css" href="project_2.css">  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"> 
+</head>
+<body>
+   <section class="header">
+       <nav>
+           <a href="index.html"><img src="img2/logonew.png"></a>Bachelor'S Cafe
+           <div class="nav-links" id="navLinks">
+            <i class="fa fa-window-close" onclick="hideMenu()"></i>
+               <ul id="navbar">
+                   <li><a href="#home">HOME</a></li>
+                   <li><a href="#franchies">FRANCHIES</a></li>
+                   <li><a href="#menu">MENU</a></li>
+                   <li><a href="#contact">CONTACT</a></li>
+               </ul>
+           </div>
+           <i class="fa fa-bars" onclick="showMenu()"></i>
+       </nav>
+       <div class="text-box">
+           <h1>WELLCOME</h1>
+           <P>Bachelor's Cafe offering you Delicious Tea and foods of the Area</P>
+           <a id="odr" href="">Order Your Food</a>
+
+      
+   </section>
+
+   <!-- section 2 for scroll page -->
+
+   <section class="city" id="franchies">
+       <h1>Our Franchies City</h1>
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum mollitia ut magnam beatae unde incidunt ratione nesciunt repellat excepturi aut!</p>
+
+       <div class="row">
+           <div class="meal-col">
+               <h3>Sahdol</h3>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque eaque sed illum autem impedit numquam!</p>
+           </div>
+           <div class="meal-col">
+               <h3>Umaria</h3>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque eaque sed illum autem impedit numquam!</p>
+           </div>
+           <div class="meal-col">
+               <h3>Katni</h3>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque eaque sed illum autem impedit numquam!</p>
+           </div>
+       </div>
+   </section>
+   <!-- section 2 food -->
+
+   <section class="food" id="menu">
+
+       <h1>Our Meal</h1>
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, vel reiciendis voluptatibus!</p>
+       <div class="row">
+           <div class="food-col">Burger
+               <img src="img2/burger.jpg">
+           </div>
+      
+           <div class="food-col">Pizza
+               <img src="img2/pizza2.jpg">
+           </div>
+
+
+           <div class="food-col">Noodles
+               <img src="img2/noodles.jpg">
+           </div>
+       
+           <div class="food-col">Coffee
+               <img src="img2/coffe.jpg">
+           </div>
+
+       </div>
+
+   </section>
+   <section class="footer" id="contact">
+       <div>
+           <h4>Contact</h4>
+           <span>call- +91-7898****</span>
+           <span>Mail us- Bachelorscafe04@gmail.com</span>
+       </div>
+   </section>
+   <!-- -----------java script toggle------>
+   <script>
+        var navLinks = document.getElementById("navLinks");
+        
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+   </script>
+   <script src="project_2.js"></script>
+</body>
+</html>
