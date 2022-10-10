@@ -6,14 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bachelor's Cafe</title>
     <link rel="stylesheet" type="text/css" href="project_2.css">  
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"> 
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet"> -->
 </head>
 <body>
    <section class="header">
        <nav>
            <a href="index.html"><img src="img2/logonew.png"></a>Bachelor'S Cafe
            <div class="nav-links" id="navLinks">
-            <i class="fa fa-window-close" onclick="hideMenu()"></i>
+            <!-- <i class="fa-solid fa-list" onclick="hideMenu()"></i> -->
+            <span class="hide-icon" onclick="hideMenu()">&#xe5d2;</span>
                <ul id="navbar">
                    <li><a href="#home">HOME</a></li>
                    <li><a href="#franchies">FRANCHIES</a></li>
@@ -21,7 +24,8 @@
                    <li><a href="#contact">CONTACT</a></li>
                </ul>
            </div>
-           <i class="fa fa-bars" onclick="showMenu()"></i>
+           <!-- <i class="fa-solid fa-list" onclick="showMenu()"></i> -->
+           <span class="show-icon" onclick="showMenu()">&#xe5cd;</span>
        </nav>
        <div class="text-box">
            <h1>WELLCOME</h1>
@@ -52,37 +56,16 @@
            </div>
        </div>
    </section>
-   <!-- section 2 food -->
 
-   <section class="food" id="menu">
-
-       <h1>Our Meal</h1>
-       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, vel reiciendis voluptatibus!</p>
-       <div class="row">
-           <div class="food-col">Burger
-               <img src="img2/burger.jpg">
-           </div>
-      
-           <div class="food-col">Pizza
-               <img src="img2/pizza2.jpg">
-           </div>
-
-
-           <div class="food-col">Noodles
-               <img src="img2/noodles.jpg">
-           </div>
-       
-           <div class="food-col">Coffee
-               <img src="img2/coffe.jpg">
-           </div>
-
-       </div>
+   <!-- <section>........</section> -->
 
    </section>
    <section class="footer" id="contact">
        <div>
            <h4>Contact</h4>
-           <span>call- +91-7898****</span>
+           <li class="join-us"><a href="https://Github.com/DilipSha04">Github</a> <i class="fa-brands fa-github"></i></li>
+           <li class="join-us"><a href="https://www.linkedin.com/in/dilip-sharma-7b3364234">Linkedin</a> <i class="fa-brands fa-linkedin"></i></li>
+           <li class="join-us"><a href="https://Instagram.com/im_dilip_004">Instagram</a> <i class="fa-brands fa-instagram"></i></li>
            <span>Mail us- Bachelorscafe04@gmail.com</span>
        </div>
    </section>

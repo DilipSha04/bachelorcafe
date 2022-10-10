@@ -1,6 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight&family=Poppins&family=Rubik&display=swap');
+
+
 * {
   margin: 0;
   padding: 0;
+}
+body{
+  font-family: 'Inter Tight', sans-serif;
 }
 html{
   scroll-behavior: smooth;
@@ -43,7 +49,6 @@ nav {
 nav {
   color: antiquewhite;
   font-size: 30px;
-  font-family: cursive;
   font-weight: 600;
   text-decoration: wavy;
 }
@@ -61,7 +66,6 @@ nav {
 }
 .text-box {
   font-size: 20px;
-  font-family: cursive;
   width: 90%;
   color: #fff;
   position: absolute;
@@ -87,7 +91,10 @@ nav {
 #odr:hover {
   background-color: rgb(245, 82, 22);
 }
-nav .fa {
+.hide-icon {
+  display: none;
+}
+.show-icon{
   display: none;
 }
 
@@ -120,7 +127,6 @@ nav .fa {
 /* ----city--- */
 .city {
   /* background-color: gray; */
-  font-family: cursive;
   width: 80%;
   margin: auto;
   text-align: center;
@@ -149,15 +155,23 @@ h3{
 .meal-col:hover{
   box-shadow: 0 0 20px 0px rgb(5, 5, 5);
 }
+
+/******media query****/
+
 @media(max-width: 700px){
   .row{
     flex-direction: column;
   }
+  .show-icon{
+    display: block;
+  }
+  .hide-icon{
+    display: block;
+  }
 }
 /*-----Franchise section----*/
-
+/* 
 .food{
-  font-family: cursive;
   width: 80%;
   margin: auto;
   text-align: center;
@@ -180,22 +194,32 @@ h3{
 }
 .food-col img{
   width: 80%;
-  /* margin: 2px; */
+  /* margin: 2px
   border-radius: 50%;
 
 }
 .food-col:hover{
   box-shadow: 0 0 20px 0px rgb(5, 5, 5);
 
-}
+}*/
 .footer{
   background-color: rgb(12, 12, 12);
   color: rgb(172, 169, 169);
   padding: 2%;
   text-align: center;
 }
-span{
-  display: block;
-  
+.join-us a{
+  text-decoration: none;
 }
+.join-us{
+  list-style: none;
+  margin: 2rem;
+  font-size: large;
+}
+.fa-brands{
+  font-size: 2rem;
+  display: inline;
+}
+
+
 
