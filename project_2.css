@@ -231,6 +231,10 @@ h3{
   display: inline;
   color: #fff;
 }
+.fab:hover{
+  color: rgb(3, 166, 242);
+
+}
 h4{
   
   padding: 1rem;
